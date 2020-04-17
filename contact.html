@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+ 19FA-SWDV-131-001-Web Styling
+ 
+ Author: Kait Low
+ Date: 9/6/2019
+ 
+ 20SP-SWDV-210-001: Intro Server Side Programming 
+ LAST MODIFIED: 2/7/2020
+ 
+ Version: 5
+ 
+ Filename: contact.html
+ 
+ Contact Page of Rising Sun Translations 
+-->
+   <title>Rising Sun Translations Contact Us</title>
+   
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="rising sun translations, japanese to english, manga, novels, english subs" />
+   <meta name="description" content="Contact us at Rising Sun Translations!" />
+   <link href="css/style1.css" rel="stylesheet" media="all" />
+   <link rel="shortcut icon" href="images/favicon-16x16.png" sizes="16x16" type="image/png">
+   <link rel="icon" href="images/favicon-32x32.png" sizes="16x16 32x32" type="image/png"> 
+   
+</head>
+<main>
+<header>		
+	<div class="container">
+	<div class="jumbotron">
+		<figure>
+			<img src="images/wave.jpg" alt="the great wave picture" />
+		</figure>
+	</div>
+	
+	<nav class="horizontal"> <a id="navicon" href="#"><img src="images/navicon.png" alt=""/></a>
+		<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="seriesList.html">Novel List</a></li>
+		<li><a href="mangaList.html">Manga List</a></li>
+		<li><a href="contact.html">Contact</a></li>
+                <li><a href="login.php">Admin</a></li>
+		</ul>		
+	</nav>
+</header> 	
+<article>
+<h1>Rising Sun Translations</h1>
+	<p>Want to help us create great content? You can! Your feedback not only helps us maintain the same quality, but we are
+	also open to recommendations!</p>
+
+  <form  method="post" action="thanks.php">
+	<fieldset>
+	<legend>Contact Us!</legend>
+<br />
+        <div>
+            <label for="name">Name<span style="color: #BC002D">*</span></label>
+            <input name="name" id="name" type="text" required/>
+        </div>
+		
+<br />
+        <div>
+            <label for="email">Email<span style="color: #BC002D">*</span></label>
+            <input name="email" id="mail" type="email" required/>
+        </div>
+		
+<br />
+        <div>
+            <label for="rate"><span style="color: #BC002D"><strong>How would you rate our content?</strong></span><br />
+            (0=poor; 10=great)<br /></label>
+            0
+            <input name="rate" id="rangeBox" type="range" value="5" step="1" min="0" max="10" />
+            10
+        </div>
+<br />		
+        <div>
+            <label for="message"><span style="color: #BC002D"><strong>Give us your feedback!</strong></span></label>
+            <textarea name="message" id="commBox"></textarea>
+
+        </div>
+<br />
+        <div>	
+            <input name="mailBack" id="mailRec" value="yes" type="checkbox" />
+            <label>Would you like to receive updates on new content ? </label>
+        </div>
+	
+    </fieldset>
+		<div id="buttons">
+                    <input id="submitButton" name="Submit" type="submit" value="Submit" />
+                    <input type="reset" value="Reset" />
+</form>
+</article>
+<footer>
+	<p>Follow us on Facebook and Instagram!</p>
+<a href="https://www.facebook.com/" target="_blank" ><img id="mediaLink" src="images/facebook.png" alt="Facebook" /></a> 
+<a href="https://www.instagram.com/" target="_blank" ><img  src="images/instagram.png" alt="Instagram" /></a>
+</footer>
+</main>
+</html>
